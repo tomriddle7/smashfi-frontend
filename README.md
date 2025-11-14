@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 기술스택
+
+ - NextJS
+ - react-hot-toast(toast 구현용)
 
 ## Getting Started
 
@@ -14,17 +17,20 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 구현내용
 
-To learn more about Next.js, take a look at the following resources:
+ - API 호출
+ - /coin-list 리다이렉트
+ - 상단 탭
+ - 검색창&검색 기능
+ - 코인 목록 페이지
+ - 즐겨찾기 추가&삭제 기능
+ - 즐겨찾기 추가&삭제시 토스트 알림 기능
+ - 항목별 오름차순&내림차순 기능
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 미구현 & 보완 필요점
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ - 값을 직접 변경하지 못하고 state를 통해 변경해야 하는 React 특성상 즐겨찾기&정렬 기능 사용시 버튼이 바로 변경되지 않아 개선 필요함.
+ - 마크업에서 일부 정렬 등 CSS 구현이 미진한 점이 있음.
+ - 제공받은 기획서에 빠진 부분이 많아(검색 결과 초기화, 여러 정렬 기준을 동시에 적용할지 등) 임의로 구현한 부분이 많음.
+ - AI는 초기 화면 마크업에만 Gemini를 활용. 마크업 개선 및 JS 로직 연결은 직접 구현.
